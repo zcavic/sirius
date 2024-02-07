@@ -2,10 +2,10 @@ import { Box, Button, IconButton, Typography, useTheme } from '@mui/material';
 import { tokens } from '../theme/theme';
 import { mockTransactions } from '../../data/mockData';
 import DownloadOutlinedIcon from '@mui/icons-material/DownloadOutlined';
-import EmailIcon from '@mui/icons-material/Email';
-import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
-import TrafficIcon from '@mui/icons-material/Traffic';
+import OfflineBoltIcon from '@mui/icons-material/OfflineBolt';
+import FlashOnIcon from '@mui/icons-material/FlashOn';
+import Co2Icon from '@mui/icons-material/Co2';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import Header from '../../components/Header';
 import LineChart from '../../components/LineChart';
 import GeographyChart from '../../components/GeographyChart';
@@ -55,12 +55,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="12,361"
-            subtitle="Emails Sent"
-            progress="0.75"
+            title="1,361"
+            subtitle="kWh Produced"
+            progress="0.89"
             increase="+14%"
             icon={
-              <EmailIcon
+              <OfflineBoltIcon
                 sx={{ color: colors.greenAccent[600], fontSize: '26px' }}
               />
             }
@@ -74,31 +74,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="431,225"
-            subtitle="Sales Obtained"
-            progress="0.50"
-            increase="+21%"
-            icon={
-              <PointOfSaleIcon
-                sx={{ color: colors.greenAccent[600], fontSize: '26px' }}
-              />
-            }
-          />
-        </Box>
-        <Box
-          gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <StatBox
-            title="32,441"
-            subtitle="New Clients"
-            progress="0.30"
+            title="2,441"
+            subtitle="Peak Power W"
+            progress="0.98"
             increase="+5%"
             icon={
-              <PersonAddIcon
+              <FlashOnIcon
                 sx={{ color: colors.greenAccent[600], fontSize: '26px' }}
               />
             }
@@ -112,13 +93,32 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="1,325,134"
-            subtitle="Traffic Received"
-            progress="0.80"
-            increase="+43%"
+            title="3.4"
+            subtitle="Sunny hours"
+            progress="0.91"
+            increase="+4%"
             icon={
-              <TrafficIcon
+              <WbSunnyIcon
                 sx={{ color: colors.greenAccent[600], fontSize: '26px' }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="3.2"
+            subtitle="CO2 Tonnes Saved"
+            progress="0.82"
+            increase="+21%"
+            icon={
+              <Co2Icon
+                sx={{ color: colors.greenAccent[600], fontSize: '45px' }}
               />
             }
           />
