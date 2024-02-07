@@ -13,7 +13,7 @@ import Pie from './features/pie';
 import FAQ from './features/faq';
 import Geography from './features/geography';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import { ColorModeContext, useMode } from './theme';
+import { ColorModeContext, useMode } from './features/theme/theme';
 import Calendar from './features/calendar/calendar';
 
 function App() {
