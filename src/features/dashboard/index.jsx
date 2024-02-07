@@ -18,7 +18,7 @@ const Dashboard = () => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box m="20px">
+    <Box m="10px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
@@ -30,7 +30,7 @@ const Dashboard = () => {
               color: colors.grey[100],
               fontSize: '14px',
               fontWeight: 'bold',
-              padding: '10px 20px',
+              padding: '10px 10px',
             }}
           >
             <DownloadOutlinedIcon sx={{ mr: '10px' }} />
@@ -44,7 +44,7 @@ const Dashboard = () => {
         display="grid"
         gridTemplateColumns="repeat(12, 1fr)"
         gridAutoRows="140px"
-        gap="20px"
+        gap="10px"
       >
         {/* ROW 1 */}
         <Box
@@ -55,9 +55,9 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="1,361"
+            title="478"
             subtitle="kWh Produced"
-            progress="0.89"
+            progress="0.35"
             increase="+14%"
             icon={
               <OfflineBoltIcon
@@ -143,14 +143,14 @@ const Dashboard = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                Total Energy Produced
               </Typography>
               <Typography
                 variant="h3"
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                $59,342.32
+                32,779 kWh
               </Typography>
             </Box>
             <Box>

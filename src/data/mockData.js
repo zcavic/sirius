@@ -432,164 +432,164 @@ export const mockPieData = [
 
 export const mockLineData = [
   {
-    id: 'Borovnica',
+    id: '2022',
     color: tokens('dark').greenAccent[500],
     data: [
       {
         x: 'January',
-        y: 101,
+        y: 537,
       },
       {
         x: 'February',
-        y: 75,
+        y: 578,
       },
       {
         x: 'March',
-        y: 36,
+        y: 1131,
       },
       {
         x: 'April',
-        y: 216,
+        y: 1194,
       },
       {
         x: 'May',
-        y: 35,
+        y: 1353,
       },
       {
         x: 'June',
-        y: 236,
+        y: 1475,
       },
       {
         x: 'July',
-        y: 88,
+        y: 1533,
       },
       {
         x: 'August',
-        y: 232,
+        y: 1313,
       },
       {
         x: 'September',
-        y: 281,
+        y: 948,
       },
       {
         x: 'October',
-        y: 1,
+        y: 825,
       },
       {
         x: 'November',
-        y: 35,
+        y: 372,
       },
       {
         x: 'December',
-        y: 14,
+        y: 140,
       },
     ],
   },
   {
-    id: 'Kozina',
+    id: '2023',
     color: tokens('dark').blueAccent[300],
     data: [
       {
         x: 'January',
-        y: 130,
+        y: 343,
       },
       {
         x: 'February',
-        y: 90,
+        y: 587,
       },
       {
         x: 'March',
-        y: 50,
+        y: 878,
       },
       {
         x: 'April',
-        y: 333,
+        y: 1026,
       },
       {
         x: 'May',
-        y: 45,
+        y: 1235,
       },
       {
         x: 'June',
-        y: 654,
+        y: 1361,
       },
       {
         x: 'July',
-        y: 32,
+        y: 1371,
       },
       {
         x: 'August',
-        y: 334,
+        y: 1118,
       },
       {
         x: 'September',
-        y: 452,
+        y: 1100,
       },
       {
         x: 'October',
-        y: 33,
+        y: 642,
       },
       {
         x: 'November',
-        y: 443,
+        y: 376,
       },
       {
         x: 'December',
-        y: 22,
+        y: 318,
       },
     ],
   },
   {
-    id: 'Strpci',
+    id: '2021',
     color: tokens('dark').redAccent[200],
     data: [
       {
         x: 'January',
-        y: 23,
+        y: 307,
       },
       {
         x: 'February',
-        y: 33,
+        y: 486,
       },
       {
         x: 'March',
-        y: 43,
+        y: 1143,
       },
       {
         x: 'April',
-        y: 43,
+        y: 1050,
       },
       {
         x: 'May',
-        y: 11,
+        y: 1167,
       },
       {
         x: 'June',
-        y: 33,
+        y: 1532,
       },
       {
         x: 'July',
-        y: 44,
+        y: 1393,
       },
       {
         x: 'August',
-        y: 55,
+        y: 1310,
       },
       {
         x: 'September',
-        y: 66,
+        y: 1105,
       },
       {
         x: 'October',
-        y: 44,
+        y: 790,
       },
       {
         x: 'November',
-        y: 34,
+        y: 424,
       },
       {
         x: 'December',
-        y: 21,
+        y: 318,
       },
     ],
   },
