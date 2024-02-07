@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
-import { Box, IconButton, Typography, useTheme } from '@mui/material';
+import { Box, Typography, useTheme } from '@mui/material';
 import { Link } from 'react-router-dom';
 import 'react-pro-sidebar/dist/css/styles.css';
 import { tokens } from '../theme/theme';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined';
-import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
+import AppsIcon from '@mui/icons-material/Apps';
 import ReceiptOutlinedIcon from '@mui/icons-material/ReceiptOutlined';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import CalendarTodayOutlinedIcon from '@mui/icons-material/CalendarTodayOutlined';
@@ -14,7 +14,8 @@ import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
 import PieChartOutlineOutlinedIcon from '@mui/icons-material/PieChartOutlineOutlined';
 import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined';
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
@@ -66,27 +67,14 @@ const Sidebar = () => {
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
             style={{
               margin: '10px 0 20px 0',
               color: colors.grey[100],
             }}
           >
-            {!isCollapsed && (
-              <Box
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-                ml="15px"
-              >
-                <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
-                </Typography>
-                <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                  <MenuOutlinedIcon />
-                </IconButton>
-              </Box>
-            )}
+            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              {isCollapsed ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+            </div>
           </MenuItem>
 
           {!isCollapsed && (
@@ -130,19 +118,19 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: '15px 0 5px 20px' }}
             >
-              Data
+              Solar Panels
             </Typography>
             <Item
-              title="Manage Team"
-              to="/team"
-              icon={<PeopleOutlinedIcon />}
+              title="Solar Panels Information"
+              to="/contacts"
+              icon={<AppsIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Contacts Information"
-              to="/contacts"
-              icon={<ContactsOutlinedIcon />}
+              title="Manage Solar Panels"
+              to="/team"
+              icon={<AppRegistrationIcon />}
               selected={selected}
               setSelected={setSelected}
             />
